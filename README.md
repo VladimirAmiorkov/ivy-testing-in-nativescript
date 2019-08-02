@@ -1,16 +1,17 @@
 # Repo build step
 Execute:
-- `npm run prepare`
+- `npm run prepare-repo`
 
 ## Test with local packages:
 - Start `ngcc` with `npm run start-ngcc`
 - Observe the output of the compilation and hope for no errors :)
 
-## Test with local packages:
+## Test with latest online packages:
 - Update the deps of the test project by executing `npm run use-latest-deps`
 - Start `ngcc` with `npm run start-ngcc`
 - Observe the output of the compilation and hope for no errors :)
 
+To reset the project and start from scratch simply execute `npm run cleanup` (this removed the node_modules of the test project, make sure to call `npm run install-test-proj-deps` after it)
 
 # Notes/questions
 The only package we are planning to update for the moment and make compatible with Ivy is `nativescript-anguar` because it is the main package that contains Angular related code. In the future we want all plugins that contains Angular directives to be Ivy compatible in the same way (example `nativescript-picker` https://github.com/NativeScript/nativescript-picker/tree/master/src/angular)
