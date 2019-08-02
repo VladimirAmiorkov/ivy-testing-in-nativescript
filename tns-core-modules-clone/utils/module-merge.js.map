@@ -1,0 +1,1 @@
+{"version":3,"file":"module-merge.js","sourceRoot":"","sources":["module-merge.ts"],"names":[],"mappings":";AAEA,SAAgB,KAAK,CAAC,aAAkB,EAAE,WAAgB;IACtD,KAAK,IAAI,GAAG,IAAI,aAAa,EAAE;QAC3B,WAAW,CAAC,GAAG,CAAC,GAAG,aAAa,CAAC,GAAG,CAAC,CAAC;KACzC;AACL,CAAC;AAJD,sBAIC"}
