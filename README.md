@@ -1,3 +1,9 @@
+# Repo build step
+Execute:
+- `npm run prepare`
+- Go to the testing project `testing-project` and start `ngcc` with `npm run start-ngcc`
+- Observe the output of the compilation and hope for no errors :)
+
 # Notes/questions
 The only package we are planning to update for the moment and make compatible with Ivy is `nativescript-anguar` because it is the main package that contains Angular related code. In the future we want all plugins that contains Angular directives to be Ivy compatible in the same way (example `nativescript-picker` https://github.com/NativeScript/nativescript-picker/tree/master/src/angular)
 We are aiming to use the “CommonJS” path of Ivy support using `ngcc`
