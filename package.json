@@ -3,10 +3,12 @@
     "repository": "https://github.com/VladimirAmiorkov/ivy-testing-in-nativescript",
     "dependencies": {},
     "scripts": {
+        "install-n-core-deps": "cd tns-core-modules-clone && npm i",
+        "install-n-angular-deps": "&& cd nativescript-angular-clone && npm i",
         "pack-core-modules": "cd tns-core-modules-clone && tsc && npm pack",
         "pack-nativescript-angular": "cd nativescript-angular-clone && tsc && npm pack",
         "copy-core-modules": "cd tns-core-modules-clone && cp tns-core-modules-*.tgz ../dist",
         "copy-nativescript-angular": "cd nativescript-angular-clone && cp nativescript-angular-*.tgz ../dist",
-        "prepare": "npm run pack-core-modules && npm run pack-nativescript-angular && npm run copy-core-modules && npm run copy-nativescript-angular"
+        "prepare": "npm run install-n-core-deps && npm run install-n-angular-deps && npm run pack-core-modules && npm run pack-nativescript-angular && npm run copy-core-modules && npm run copy-nativescript-angular"
     }
 }
