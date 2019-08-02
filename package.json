@@ -4,7 +4,7 @@
     "dependencies": {},
     "scripts": {
         "install-n-core-deps": "cd tns-core-modules-clone && npm i",
-        "install-n-angular-deps": "&& cd nativescript-angular-clone && npm i",
+        "install-n-angular-deps": "cd nativescript-angular-clone && npm i",
         "pack-core-modules": "cd tns-core-modules-clone && tsc && npm pack",
         "pack-nativescript-angular": "cd nativescript-angular-clone && tsc && npm pack",
         "copy-core-modules": "cd tns-core-modules-clone && cp tns-core-modules-*.tgz ../dist",
