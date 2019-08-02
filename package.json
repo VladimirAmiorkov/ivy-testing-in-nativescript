@@ -10,6 +10,6 @@
         "pack-nativescript-angular": "cd nativescript-angular-clone && tsc && npm pack",
         "copy-core-modules": "cd tns-core-modules-clone && cp tns-core-modules-*.tgz ../dist",
         "copy-nativescript-angular": "cd nativescript-angular-clone && cp nativescript-angular-*.tgz ../dist",
-        "prepare": "npm run install-n-core-deps && npm run install-n-angular-deps && npm run install-test-proj-deps && npm run pack-core-modules && npm run pack-nativescript-angular && npm run copy-core-modules && npm run copy-nativescript-angular"
+        "prepare": "npm run install-n-core-deps && npm run install-n-angular-deps && npm run pack-core-modules && npm run pack-nativescript-angular && npm run copy-core-modules && npm run copy-nativescript-angular && && npm run install-test-proj-deps"
     }
 }
