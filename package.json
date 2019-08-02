@@ -3,13 +3,18 @@
     "repository": "https://github.com/VladimirAmiorkov/ivy-testing-in-nativescript",
     "dependencies": {},
     "scripts": {
+        "go-to-test-proj": "cd testing-project",
         "install-n-core-deps": "cd tns-core-modules-clone && npm i",
         "install-n-angular-deps": "cd nativescript-angular-clone && npm i",
-        "install-test-proj-deps": "cd testing-project && npm i",
+        "install-test-proj-deps": "npm run go-to-test-proj && npm i",
         "pack-core-modules": "cd tns-core-modules-clone && tsc && npm pack",
         "pack-nativescript-angular": "cd nativescript-angular-clone && tsc && npm pack",
-        "copy-core-modules": "cd tns-core-modules-clone && cp tns-core-modules-*.tgz ../dist",
+        "copy-core-modules": "mkdir dist && cd tns-core-modules-clone && cp tns-core-modules-*.tgz ../dist",
         "copy-nativescript-angular": "cd nativescript-angular-clone && cp nativescript-angular-*.tgz ../dist",
-        "prepare": "npm run install-n-core-deps && npm run install-n-angular-deps && npm run pack-core-modules && npm run pack-nativescript-angular && npm run copy-core-modules && npm run copy-nativescript-angular && && npm run install-test-proj-deps"
+        "prepare": "npm run install-n-core-deps && npm run install-n-angular-deps && npm run pack-core-modules && npm run pack-nativescript-angular && npm run copy-core-modules && npm run copy-nativescript-angular && npm run install-test-proj-deps",
+        "start-ngcc": "npm run go-to-test-proj && node ./node_modules/.bin/ivy-ngcc",
+        "cleanup": "npm run go-to-test-proj && rm -rf ./node_modules",
+        "use-local-deps": "npm run go-to-test-proj && npm i ../dist/nativescript-angular-8.2.0.tgz && npm i ../dist/tns-core-modules-6.1.0.tgz",
+        "use-latest-deps": "npm run go-to-test-proj && npm i tns-core-modules@latest && npm i nativescript-angular@latest"
     }
 }
