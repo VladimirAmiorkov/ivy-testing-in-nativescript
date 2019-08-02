@@ -32,21 +32,27 @@ NativeScript-like app with Angular (package.json containing the deps of a real {
 Dependencies:
 ```
 "dependencies": {
-  "@angular/animations": "~8.1.0",
-  "@angular/common": "~8.1.0",
-  "@angular/compiler": "~8.1.0",
-  "@angular/core": "~8.1.0",
-  "@angular/forms": "~8.1.0",
+  "@angular/animations": "8.1.0",
+  "@angular/common": "8.1.0",
+  "@angular/compiler": "8.1.0",
+  "@angular/core": "8.1.0",
+  "@angular/forms": "8.1.0",
   "@angular/http": "8.0.0-beta.10",
-  "@angular/platform-browser": "~8.1.0",
-  "@angular/platform-browser-dynamic": "~8.1.0",
-  "@angular/router": "~8.1.0",
-  "nativescript-angular": "file:../../../Desktop/Work/nativescript-angular/nativescript-angular/nativescript-angular-8.1.0.tgz",
-  "nativescript-theme-core": "~1.0.4",
-  "reflect-metadata": "~0.1.12",
-  "rxjs": "~6.5.0",
-  "tns-core-modules": "6.0.1",
-  "zone.js": "~0.9.1"
+  "@angular/platform-browser": "8.1.0",
+  "@angular/platform-browser-dynamic": "8.1.0",
+  "@angular/router": "8.1.0",
+  "nativescript-angular": "file:../dist/nativescript-angular-8.2.0.tgz",
+  "nativescript-theme-core": "1.0.4",
+  "reflect-metadata": "0.1.12",
+  "rxjs": "6.5.0",
+  "tns-core-modules": "file:../dist/tns-core-modules-6.1.0.tgz",
+  "zone.js": "0.9.1"
+},
+"devDependencies": {
+  "@angular/compiler-cli": "8.1.0",
+  "@ngtools/webpack": "8.1.0",
+  "nativescript-dev-webpack": "1.0.0",
+  "typescript": "3.4.5"
 }
 ```
  
@@ -66,43 +72,3 @@ module.exports = {
     }
 }
 ```
-
-
-
-{
-  "nativescript": {
-    "id": "org.nativescript.testivy",
-    "tns-android": {
-      "version": "6.0.0"
-    },
-    "tns-ios": {
-      "version": "6.0.0"
-    }
-  },
-  "description": "NativeScript Application",
-  "license": "SEE LICENSE IN <your-license-filename>",
-  "repository": "<fill-your-repository-here>",
-  "dependencies": {
-    "@angular/animations": "~8.1.0",
-    "@angular/common": "~8.1.0",
-    "@angular/compiler": "~8.1.0",
-    "@angular/core": "~8.1.0",
-    "@angular/forms": "~8.1.0",
-    "@angular/http": "8.0.0-beta.10",
-    "@angular/platform-browser": "~8.1.0",
-    "@angular/platform-browser-dynamic": "~8.1.0",
-    "@angular/router": "~8.1.0",
-    "nativescript-angular": "file:../../../Desktop/Work/nativescript-angular/nativescript-angular/nativescript-angular-8.2.0.tgz",
-    "nativescript-theme-core": "~1.0.4",
-    "reflect-metadata": "~0.1.12",
-    "rxjs": "~6.5.0",
-    "tns-core-modules": "file:../../../Desktop/Work/NativeScript/bin/dist/tns-core-modules-6.1.0.tgz",
-    "zone.js": "~0.9.1"
-  },
-  "devDependencies": {
-    "@angular/compiler-cli": "~8.1.0",
-    "@ngtools/webpack": "~8.1.0",
-    "nativescript-dev-webpack": "1.0.0",
-    "typescript": "3.4.5"
-  }
-}
