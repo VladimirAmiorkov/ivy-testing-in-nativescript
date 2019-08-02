@@ -32,6 +32,9 @@
     "typescript": "3.4.5"
   },
   "scripts": {
-    "start-ngcc": "node ./node_modules/.bin/ivy-ngcc"
+    "start-ngcc": "node ./node_modules/.bin/ivy-ngcc",
+    "cleanup": "rm -rf ./node_modules",
+    "use-local-deps": "npm i ../dist/nativescript-angular-8.2.0.tgz && npm i ../dist/tns-core-modules-6.1.0.tgz",
+    "use-latest-deps": "npm i tns-core-modules@latest && npm i nativescript-angular@latest"
   }
 }
